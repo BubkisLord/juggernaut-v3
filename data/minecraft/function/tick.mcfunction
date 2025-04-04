@@ -4,3 +4,5 @@ execute if entity @a[scores={health=..0}] as @a[scores={health=..0}] run functio
 execute if entity @a[tag=to_be_caged] run function juggernaut:tick/cage_runners
 execute if entity @a[tag=caged] run function juggernaut:tick/create_cage_effects
 execute if entity @a[tag=caged,tag=runner] as @a[tag=caged,tag=runner] run function juggernaut:tick/check_cage_time
+
+execute if entity @a[scores={sneaking=1..}] as @a[scores={sneaking=1..}] run scoreboard players set @a[scores={sneaking=1..}] sneaking 0
