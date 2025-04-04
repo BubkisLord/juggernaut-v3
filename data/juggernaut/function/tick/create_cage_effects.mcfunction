@@ -1,0 +1,1 @@
+execute as @e[type=armor_stand,tag=active_cage] at @s run function juggernaut:cages/cage_effects

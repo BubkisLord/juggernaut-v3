@@ -20,9 +20,39 @@ scoreboard objectives add game_time_ticks dummy "Game Time"
 scoreboard objectives add game_time_seconds dummy "Game Time Seconds"
 scoreboard objectives add debug_mode dummy "Debug Mode"
 
+scoreboard objectives add stations_completed dummy "Stations Completed"
+scoreboard objectives add stations_needed dummy "Stations Needed"
+
+scoreboard objectives add replenishment_percent dummy "Replenishment Percent"
+
+scoreboard objectives add temp_replenishment_done dummy
+scoreboard objectives add replenishment_done dummy "Replenishment Done"
+scoreboard objectives add replenishment_needed dummy "Replenishment Needed"
+scoreboard objectives add regress_amount dummy
+scoreboard objectives add replenish_timeout dummy
+
+scoreboard objectives add replenish_mod_timer dummy
+scoreboard objectives add ticks_spent_buffing dummy
+scoreboard objectives add ticks_spent_debuffing dummy
+scoreboard objectives add ticks_till_increment dummy
+scoreboard objectives add ticks_till_decrement dummy
+
+scoreboard objectives add game_state dummy "Game State"
+
 # Player Game Variables
-scoreboard objectives add lives dummy "Lives"
+scoreboard objectives add max_lives dummy "Total Lives"
+scoreboard objectives add lives_remaining dummy "Lives Remaining"
 scoreboard objectives add deaths dummy "Deaths"
+
+scoreboard objectives add max_cage_time dummy "Max Cage Time"
+scoreboard objectives add cage_time_left dummy "Cage Time Left"
+scoreboard objectives add cage_time_left_s dummy "Cage Time Left (Seconds)"
+scoreboard objectives add temp_cage_time dummy
+
+scoreboard objectives add replenish_buff dummy "Replenishment Buff"
+scoreboard objectives add replenish_debuff dummy "Replenishment Debuff"
+scoreboard objectives add replenishment_mod dummy "Replenishment Modifier"
+
 scoreboard objectives add respawn_time_ticks dummy "Respawn Time (Ticks)"
 scoreboard objectives add respawn_time_seconds dummy "Respawn Time"
 
@@ -52,3 +82,34 @@ scoreboard objectives add flying custom:fly_one_cm
 scoreboard objectives add climbing custom:climb_one_cm
 scoreboard objectives add falling custom:fall_one_cm
 scoreboard objectives add jumping custom:jump
+
+# General Variable
+scoreboard objectives add var dummy
+
+
+# Set numbers
+scoreboard players set #0 var 0
+scoreboard players set #1 var 1
+scoreboard players set #2 var 2
+scoreboard players set #3 var 3
+scoreboard players set #4 var 4
+scoreboard players set #5 var 5
+scoreboard players set #6 var 6
+scoreboard players set #7 var 7
+scoreboard players set #8 var 8
+scoreboard players set #9 var 9
+scoreboard players set #10 var 10
+scoreboard players set #20 var 20
+scoreboard players set #30 var 30
+scoreboard players set #33 var 33
+scoreboard players set #40 var 40
+scoreboard players set #50 var 50
+scoreboard players set #60 var 60
+scoreboard players set #66 var 66
+scoreboard players set #70 var 70
+scoreboard players set #75 var 75
+scoreboard players set #80 var 80
+scoreboard players set #85 var 85
+scoreboard players set #90 var 90
+scoreboard players set #95 var 95
+scoreboard players set #100 var 100
