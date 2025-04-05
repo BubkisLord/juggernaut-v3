@@ -1,4 +1,4 @@
-scoreboard players add @s deaths 1
+scoreboard players set @s lives_remaining 0
 scoreboard players operation @s lives_remaining = #juggernaut max_lives
 scoreboard players operation @s lives_remaining -= @s deaths
 

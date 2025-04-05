@@ -42,7 +42,7 @@ scoreboard objectives add game_state dummy "Game State"
 # Player Game Variables
 scoreboard objectives add max_lives dummy "Total Lives"
 scoreboard objectives add lives_remaining dummy "Lives Remaining"
-scoreboard objectives add deaths dummy "Deaths"
+scoreboard objectives add deaths custom:deaths "Deaths"
 
 scoreboard objectives add max_cage_time dummy "Max Cage Time"
 scoreboard objectives add cage_time_left dummy "Cage Time Left"
