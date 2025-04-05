@@ -1,3 +1,4 @@
 playsound entity.ender_dragon.growl master @a[tag=runner,tag=!to_be_caged] ~ ~ ~ 1 1
-summon armor_stand ~ ~ ~ {Tags:["active_cage"],Invisible:1b,NoGravity:1b,Marker:1b,Small:1b}
-summon text_display ~ ~2 ~ {Tags:["active_cage"],text:'{"text":"Time Left:", "extra": [{"score": {"name": "@s","objective": "cage_time_left_s"},"bold": true}]}',alignment:"center",NoGravity:true,see_through:true}
+summon armor_stand ~ ~ ~ {Tags:["active_cage","kill_on_end_game"],Invisible:1b,NoGravity:1b,Marker:1b,Small:1b}
+execute as @p[distance=..2,tag=caged] at @s run summon text_display ~ ~2.5 ~ {Tags:["active_cage","kill_on_end_game"],text:{"text": "Time Left: ","extra": [{"score": {"name": "@p[tag=caged]","objective": "cage_time_left_s"}}]},alignment:"center",NoGravity:true,see_through:true,view_range:10b,shadow:0b}
+execute as @p[distance=..2,tag=caged] at @s run summon text_display ~ ~2.5 ~ {Tags:["active_cage","kill_on_end_game"],text:{"text": "Time Left: ","extra": [{"score": {"name": "@p[tag=caged]","objective": "cage_time_left_s"}}]},alignment:"center",NoGravity:true,see_through:true,view_range:10b,shadow:0b}
