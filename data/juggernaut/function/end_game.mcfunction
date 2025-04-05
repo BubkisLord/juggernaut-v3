@@ -1,3 +1,5 @@
+kill @e[tag=kill_on_end_game]
+
 scoreboard players set @a deaths 0
 scoreboard players set @a game_time_seconds 0
 scoreboard players set @a game_time_ticks 0
