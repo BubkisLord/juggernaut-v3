@@ -16,6 +16,8 @@ particle minecraft:dust{color:[1,0,0],scale:1} ~-0.5 ~2.4 ~ 0 0 0.25 0.1 2 force
 particle minecraft:dust{color:[1,0,0],scale:1} ~ ~2.4 ~0.5 0.25 0 0 0.1 2 force
 particle minecraft:dust{color:[1,0,0],scale:1} ~ ~2.4 ~-0.5 0.25 0 0 0.1 2 force
 
+particle minecraft:flame ~ ~1.2 ~ 0.5 0.6 0.5 0.1 10 force
+
 execute as @p[distance=..2,tag=caged] run attribute @s minecraft:gravity modifier add juggernaut:cage_gravity -0.08 add_value
 execute as @p[distance=..2,tag=caged] run effect give @s minecraft:resistance infinite 255 true
 execute as @p[distance=..2,tag=caged] run effect give @s minecraft:weakness infinite 255 true
