@@ -28,7 +28,7 @@ execute as @p[distance=..2,tag=caged] at @s run kill @e[type=text_display,tag=ac
 # execute as @p[distance=..2,tag=caged] at @s run summon text_display ~ ~2.5 ~ {Tags:["active_cage","kill_on_end_game"],text:{"text": "Time Left: ","extra": [{"score": {"name": "@p[tag=caged]","objective": "cage_time_left_s"}}]},alignment:"center",NoGravity:true,see_through:true,view_range:10b,shadow:0b}
 execute as @p[distance=..2,tag=caged] run tp @s ~ ~0.2 ~
 
-execute as @a[distance=..4,tag=runner,tag=!caged,tag=!to_be_caged] run item replace entity @s hotbar.8 with red_concrete[item_name='{"text": "Release Caged Runner","color": "red","bold": true}'] 1
+execute as @a[distance=..4,tag=runner,tag=!caged,tag=!to_be_caged] run item replace entity @s hotbar.8 with red_concrete[item_name={"text": "Release Caged Runner","color": "red","bold": true}] 1
 execute as @a[distance=5..8,tag=runner,tag=!caged,tag=!to_be_caged,nbt={Inventory:[{Slot:8b,id:"minecraft:red_concrete"}]}] run item replace entity @s hotbar.8 with air 1
 
 execute if entity @n[type=item,distance=..4,name="Release Caged Runner"] as @n[tag=caged,distance=..2] run function juggernaut:cages/uncage_runner

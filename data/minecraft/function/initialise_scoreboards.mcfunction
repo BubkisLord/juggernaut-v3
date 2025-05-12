@@ -48,6 +48,7 @@ scoreboard objectives add max_cage_time dummy "Max Cage Time"
 scoreboard objectives add cage_time_left dummy "Cage Time Left"
 scoreboard objectives add cage_time_left_s dummy "Cage Time Left (Seconds)"
 scoreboard objectives add temp_cage_time dummy
+scoreboard objectives add hook_stages dummy
 
 scoreboard objectives add replenish_buff dummy "Replenishment Buff"
 scoreboard objectives add replenish_debuff dummy "Replenishment Debuff"
